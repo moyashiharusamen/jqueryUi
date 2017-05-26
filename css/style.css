@@ -1,6 +1,13 @@
+@charset "utf-8";
+
+.wrap {
+  width: 960px;
+  margin: 8px auto 0;
+  overflow: hidden;
+}
 .scoreBoard {
   width: 220px;
-  margin: 8px auto 0;
+  float: left;
   padding: 0 30px 16px;
   border: 1px solid #333;
   overflow: hidden;
@@ -22,7 +29,8 @@
   border-right: 1px solid #fff;
   background-color: #023CA6;
 }
-.startingMember > li {
+.startingMember > li,
+.RosterMember > li {
   width: 160px;
   height: 60px;
   line-height: 60px;
@@ -35,3 +43,28 @@
 .startingMember > li {
   margin-top: 16px;
 }
+
+.bench {
+  width: 528px;
+  padding: 0 16px 16px 0;
+  float: right;
+  border: 1px solid #333;
+  box-sizing: content-box;
+}
+.RosterMember {
+  font-size: 0;
+}
+.RosterMember > li {
+  float: left;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+/*.RosterMember > li:nth-child(-n+3) {
+  margin-top: 0;
+}
+.RosterMember > li:nth-child(n+4) {
+  margin-top: 16px;
+}
+.RosterMember > li:nth-child(3n+1) {
+  margin-left: 0;
+}*/
